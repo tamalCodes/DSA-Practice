@@ -3,28 +3,29 @@ using namespace std;
 
 int minjumps(int arr[], int n)
 {
+
     if (arr[0] == 0)
         return -1;
-    int jumps = 0, m = 0, halt = 0;
 
+    int halt = 0, m = 0, jump = 0;
     for (int i = 0; i < n - 1; i++)
     {
-        m = max(m, i + arr[i + 1]);
+        m = max(m, i + arr[i]);
         if (m >= n - 1)
         {
-            jumps = jumps + 1;
-            return jumps;
+            jump = jump + 1;
+            return jump;
         }
 
         if (i == halt)
         {
             halt = m;
-            jumps = jumps + 1;
+            jump = jump + 1;
         }
     }
 
     if (halt >= n - 1)
-        return jumps;
+        return jump;
     else
         return -1;
 }
