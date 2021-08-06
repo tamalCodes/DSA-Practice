@@ -2,7 +2,7 @@
 //The majority element is the one which will be present more than (n/2) times.
 // Link to the question: https://leetcode.com/problems/majority-element/
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -31,7 +31,7 @@ int main()
             }
             else
             {
-                count = count + 1;
+                count = count - 1;
             }
 
             if (count == 0)
