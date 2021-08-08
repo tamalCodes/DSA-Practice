@@ -1,5 +1,7 @@
 //This is a program to find out the maximum product of a subarray
 //The logic is to select an element and to give it choices wether it wants to multiply with the prev max or min
+//Then we get the maxproduct and the minproduct and select the maxproduct as the answer.
+
 
 #include <bits/stdc++.h>
 using namespace std;
