@@ -10,6 +10,6 @@ int main()
  int *aptr = &a;
  cout<<aptr;  //this prints the memory location of the memory
 
- cout<<*aptr;  //this will print the value of a. Dereferencing.
+ cout<<*aptr;  //this will print the value of a. dereferencing.
  return 0;
 }
