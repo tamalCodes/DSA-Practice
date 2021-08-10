@@ -1,7 +1,8 @@
 {
-    "files.associations": {
-        "iostream": "cpp",
-        "iterator": "cpp",
-        "xutility": "cpp"
-    }
+  "files.associations": {
+    "iostream": "cpp",
+    "iterator": "cpp",
+    "xutility": "cpp",
+    "ostream": "cpp"
+  }
 }
