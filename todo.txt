@@ -1,1 +1,4 @@
 1. First repeating element : Hashing || Time: O(n)
+2. Duplicate elements || Tortoise method
+3. Best time to buy and sell stock 
+4. First missing positive  || Simple checker array concept
