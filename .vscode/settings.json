@@ -4,6 +4,14 @@
     "iterator": "cpp",
     "xutility": "cpp",
     "ostream": "cpp",
-    "xstring": "cpp"
+    "xstring": "cpp",
+    "exception": "cpp",
+    "ios": "cpp",
+    "istream": "cpp",
+    "memory": "cpp",
+    "streambuf": "cpp",
+    "tuple": "cpp",
+    "utility": "cpp",
+    "xiosbase": "cpp"
   }
 }
