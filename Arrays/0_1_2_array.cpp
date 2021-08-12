@@ -17,34 +17,33 @@ int main()
         cin >> arr[i];
     }
 
-    int low = arr[0];
-    int mid = arr[0];
-    int high = arr[n - 1];
+    int low = 0;
+    int mid = 0;
+    int high = n - 1;
 
     while (mid <= high)
     {
-        if (arr[mid] == 0)
+        switch (arr[mid])
         {
-            swap(arr[mid], arr[low]);
-            mid++;
-            low++;
-        }
+        case 0:
+            swap(arr[low++], arr[mid++]);
+            break;
 
-        if (arr[mid] == 1)
-        {
+        case 1:
             mid++;
-        }
+            break;
 
-        if (arr[mid] == 2)
-        {
-            swap(arr[mid], arr[high]);
-            high--;
+        case 2:
+            swap(arr[mid], arr[high--]);
+            break;
+
+    
         }
     }
 
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i];
+        cout << arr[i]<<" ";
     }
     return 0;
 }
