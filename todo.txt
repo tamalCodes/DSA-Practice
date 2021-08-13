@@ -1,3 +1,4 @@
 1. First repeating element : Hashing || Time: O(n)
 2. Subarray with zero sum || Maps
 3. repeating and missing || XOR
+4. median of 2 arrays
