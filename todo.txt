@@ -1,3 +1,3 @@
 1. First repeating element : Hashing || Time: O(n)
 2. Subarray with zero sum || Maps
-3.Dutch national flag
+3. repeating and missing || XOR
