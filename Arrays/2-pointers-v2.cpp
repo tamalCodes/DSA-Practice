@@ -1,3 +1,5 @@
+//https://practice.geeksforgeeks.org/problems/smallest-subarray-with-sum-greater-than-x5651/1
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,15 +13,15 @@ int sum(int arr[], int n, int x)
 
     while(end<n)
     {
-        while (sum<=x && end<n)
+        while (sum<=x && end<n) //until and unless the sum is greater than x we keep increasing it
         {
             sum = sum + arr[end];
             end ++;
         }
 
-        while(sum>x && start<n)
+        while(sum>x && start<n)  //as soon as the sum is greater than x we decrease it from the start while it is still greater than x
         {
-            if((end-start)<minlength)   //this is for the count
+            if((end-start)<minlength)   //if the new subarray's length is less than x update the minlength
             {
                 minlength = end - start;
             }
