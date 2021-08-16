@@ -4,3 +4,4 @@
 4. median of 2 arrays
 5. Longest consequtive subsequence || Hashing
 6. Count pairs with given sum || Maps
+7. Merge Intervals || Vectors,pairs
