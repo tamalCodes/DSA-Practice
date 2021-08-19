@@ -1,8 +1,18 @@
 #include <iostream>
+#include <stdlib.h>
+#include <vector>
 using namespace std;
 
-int threesum(int arr[],int n)
+vector<vector<int>> threeSum(vector<int>& nums)
 {
+    sort(nums.begin(),nums.end());    
+    vector<vector<int>> ans;
+
+    for (int i = 0; i < nums.size()-2; i++)
+    {
+        /* code */
+    }
+    
 
 }
 
