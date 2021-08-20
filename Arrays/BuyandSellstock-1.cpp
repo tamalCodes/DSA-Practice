@@ -1,5 +1,7 @@
 //The question is to find out the best time to buy and sell the stocks.
 //The objective is to find out the maximum profit.
+//The transaction will be just one time.
+//So we find out the diff between the max and min element
 //Question: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 
