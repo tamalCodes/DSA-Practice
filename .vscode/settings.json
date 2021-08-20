@@ -42,7 +42,8 @@
     "xlocnum": "cpp",
     "xmemory": "cpp",
     "xstddef": "cpp",
-    "xtr1common": "cpp"
+    "xtr1common": "cpp",
+    "vector": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }

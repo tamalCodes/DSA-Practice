@@ -6,5 +6,4 @@
 6. Count pairs with given sum || Maps
 7. Merge Intervals || Vectors,pairs
 8. Count Inversion || Merge sort
-9. 3-Sum 
-10. Trapping Rainwater
+9. Trapping Rainwater
