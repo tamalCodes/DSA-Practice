@@ -43,7 +43,9 @@
     "xmemory": "cpp",
     "xstddef": "cpp",
     "xtr1common": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "sstream": "cpp",
+    "string": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }
