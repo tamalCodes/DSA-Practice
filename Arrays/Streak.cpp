@@ -23,7 +23,7 @@ int streakchecker(int arr[], int n)
             {
                 ans = streak;
             }
-                
+
             streak = 1;
             pd = cd;
         }

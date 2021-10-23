@@ -12,17 +12,17 @@ int main()
     cin >> n3;
 
     int a[n1], b[n2], c[n3];
-    cout<<"Enter a[]"<<endl;
+    cout << "Enter a[]" << endl;
     for (int i = 0; i < n1; i++)
     {
         cin >> a[i];
     }
-        cout<<"Enter b[]"<<endl;
+    cout << "Enter b[]" << endl;
     for (int i = 0; i < n2; i++)
     {
         cin >> b[i];
     }
-        cout<<"Enter c[]"<<endl;
+    cout << "Enter c[]" << endl;
 
     for (int i = 0; i < n3; i++)
     {
@@ -31,11 +31,11 @@ int main()
 
     int i = 0, j = 0, k = 0;
 
-    cout<<"Starting loop"<<endl;
+    cout << "Starting loop" << endl;
     while (i < n1 && j < n2 && k < n3)
     {
         // cout<<"I is : "<<i<<endl;
-        if ((a[i]==b[j]) && (b[j]==c[k]))
+        if ((a[i] == b[j]) && (b[j] == c[k]))
         {
             cout << a[i] << " ";
             i++;
