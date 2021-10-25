@@ -15,40 +15,26 @@ node *create()
     return temp;
 }
 
-// here we are simply inserting the node at the start of the linked list
-node *insert(node *head, int data, int pos)
+// here we are going all the way to the last node
+// then we are making the second last node as q
+// making q the last node and finally freeing t
+node *Delete(node *head)
 {
-    int count = 1;
     node *t = head;
-    node *ptr = create();
-    ptr->data = data;
-
-    // we need to check several conditions before inserting the node
-    if (pos <= 0 || (pos > count && head == NULL))
+    if (head == NULL)
     {
-        printf("INVALID");
-    }
-    else if (pos == 1 && head == NULL)
-    {
-        head = ptr;
-    }
-    else if (pos == 1)
-    {
-        t->prev = ptr;
-        ptr->next = t;
-        head = ptr;
+        printf("Invalid");
     }
     else
     {
-        while (t->next != NULL && count < pos)
+        while (t->next != NULL)
         {
             t = t->next;
-            count++;
         }
-        ptr->next = t;
-        ptr->prev = t->prev;
-        t->prev->next = ptr;
-        t->prev = ptr;
+
+        node *q = t->prev;
+        q->next = NULL;
+        free(t);
     }
     return head;
 }
@@ -84,6 +70,7 @@ int main()
     fourth->prev = third;
     fourth->next = NULL;
 
-    head = insert(head, 69, 3);
+    head = Delete(head);
+
     traversal(head);
 }
