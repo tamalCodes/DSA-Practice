@@ -15,7 +15,6 @@ node *create()
     return temp;
 }
 
-// here we are simply inserting the node at the start of the linked list
 node *insert(node *head, int data, int pos)
 {
     int count = 1;
@@ -24,6 +23,11 @@ node *insert(node *head, int data, int pos)
     ptr->data = data;
 
     // we need to check several conditions before inserting the node
+    // we check if the given position is less than or == to zero or not
+    // we check if the position is 1 and the head is NULL or not
+    // we check if the position is 1 but the head has a value
+    // Finally in the else part we go to the node (3rd node if pos=3) and then attach a new node
+    // just before the initial 3rd node.
     if (pos <= 0 || (pos > count && head == NULL))
     {
         printf("INVALID");
