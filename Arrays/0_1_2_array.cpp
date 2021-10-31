@@ -14,6 +14,7 @@ int main()
     int arr[n];
     for (int i = 0; i < n; i++)
     {
+    std:
         cin >> arr[i];
     }
 
@@ -36,14 +37,12 @@ int main()
         case 2:
             swap(arr[mid], arr[high--]);
             break;
-
-    
         }
     }
 
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i]<<" ";
+        cout << arr[i] << " ";
     }
     return 0;
 }
