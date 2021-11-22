@@ -39,6 +39,32 @@ void selection(int arr[], int n)
     }
 }
 
+// for every index you are at put that element in correct place on it's left side.
+// worst case is when the array is desecnding O(n2)
+// best case is array is already sorted O(n)
+// Much less efficient on large set of inputs.
+//Stable sorting algorithm.
+
+void insertion(int arr[], int n)
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = i + 1; j > 0; j--)
+        {
+            if (arr[j] < arr[j - 1])
+            {
+                int t = arr[j];
+                arr[j] = arr[j - 1];
+                arr[j - 1] = t;
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+}
+
 void print(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
@@ -51,6 +77,7 @@ int main()
 {
     int arr[10] = {1, 2, 5, 7, 9, 3, 6, 4, 2, 8};
     //bubble(arr, 10);
-    selection(arr, 10);
+    // selection(arr, 10);
+    insertion(arr, 10);
     print(arr, 10);
 }
