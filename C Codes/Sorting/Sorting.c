@@ -65,6 +65,12 @@ void insertion(int arr[], int n)
     }
 }
 
+// here we choose a pivot 'p'. After 1st pass, all element < P will be on LHS
+// All elements > P will be on RHS
+void quick(int arr[], int n)
+{
+}
+
 void print(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
