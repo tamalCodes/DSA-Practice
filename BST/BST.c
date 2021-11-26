@@ -32,6 +32,20 @@ node *insert(node *root, int data)
     return root;
 }
 
+struct node *search(node *root, int data)
+{
+    // Base Cases: root is null or key is present at root
+    if (root == NULL || root->data == data)
+        return root;
+
+    // Key is greater than root's key
+    if (root->data < data)
+        return search(root->right, data);
+
+    // Key is smaller than root's key
+    return search(root->left, data);
+}
+
 void inOrder(node *h)
 {
     if (h != NULL)
@@ -52,6 +66,14 @@ int main()
     insert(root, 70);
     insert(root, 60);
     insert(root, 80);
+    if (search(root, 40))
+    {
+        printf("Data is present \n");
+    }
+    else
+    {
+        printf("Data not found \n");
+    }
 
     inOrder(root);
 }
