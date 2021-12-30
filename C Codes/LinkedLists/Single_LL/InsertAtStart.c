@@ -49,4 +49,7 @@ int main()
     // here we are updating the head
     head = Insert_Start(head, 69);
     traversal(head);
+    printf("\n");
+    head->data = 169;
+    traversal(head);
 }

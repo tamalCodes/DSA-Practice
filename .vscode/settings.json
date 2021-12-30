@@ -1,5 +1,6 @@
 {
   "files.associations": {
+    "*.ejs": "html",
     "iostream": "cpp",
     "iterator": "cpp",
     "xutility": "cpp",
@@ -45,7 +46,9 @@
     "xtr1common": "cpp",
     "vector": "cpp",
     "sstream": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "string_view": "cpp",
+    "regex": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled",
   "cmake.configureOnOpen": false
