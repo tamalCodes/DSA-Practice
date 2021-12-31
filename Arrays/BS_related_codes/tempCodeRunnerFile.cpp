@@ -1,0 +1,1 @@
+binSearch(arr, start, end, target);
