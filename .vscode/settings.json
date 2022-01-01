@@ -48,7 +48,9 @@
     "sstream": "cpp",
     "string": "cpp",
     "string_view": "cpp",
-    "regex": "cpp"
+    "regex": "cpp",
+    "valarray": "cpp",
+    "functional": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled",
   "cmake.configureOnOpen": false
