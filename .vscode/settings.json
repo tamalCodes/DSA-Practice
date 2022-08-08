@@ -50,7 +50,8 @@
     "string_view": "cpp",
     "regex": "cpp",
     "valarray": "cpp",
-    "functional": "cpp"
+    "functional": "cpp",
+    "xmemory0": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled",
   "cmake.configureOnOpen": false
