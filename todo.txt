@@ -1,9 +1,0 @@
-1. First repeating element : Hashing || Time: O(n)
-2. Subarray with zero sum || Maps
-3. repeating and missing || XOR
-4. median of 2 arrays
-5. Longest consequtive subsequence || Hashing
-6. Count pairs with given sum || Maps
-7. Merge Intervals || Vectors,pairs
-8. Count Inversion || Merge sort
-9. Stock span problem || Stack
