@@ -1,1 +1,0 @@
-printf("Enter value for disp[%d][%d]:", i, j);

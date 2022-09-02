@@ -18,7 +18,7 @@ int main()
         cout << (2 ^ 3 ^ 1 ^ 6 ^ 3 ^ 6 ^ 2);
     }
 
-    cout << "Unique number : " << ans;
+    cout << "Unique number : " << ans << endl;
 
     return 0;
 }

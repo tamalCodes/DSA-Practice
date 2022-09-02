@@ -58,7 +58,7 @@ void BinarySearch(int arr[], int n, int students)
         }
     }
 
-    cout << res;
+    cout << res << endl;
 }
 int main()
 {
