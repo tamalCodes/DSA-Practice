@@ -19,3 +19,6 @@ public:
         
     }
 };
+
+// BF : check every letter
+// Nahole do ceiling approach ! 
