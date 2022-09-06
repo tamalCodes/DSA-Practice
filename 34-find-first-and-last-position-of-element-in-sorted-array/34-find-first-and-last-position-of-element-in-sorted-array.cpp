@@ -1,32 +1,69 @@
 class Solution {
 public:
+    
+   int leftSearch(vector<int>& nums, int target)
+{   
+    int start = 0, end = nums.size()-1;
+    
+    while(start<=end)
+    {
+        int mid = (start + end)/2;
+        
+         if(nums[mid]>target)
+             end = mid - 1;
+        else if (nums[mid]<target)
+            start = mid + 1;
+        else
+        {
+            
+            if(nums[mid-1]==target)
+                end = mid - 1;
+            
+            if(nums[mid-1]<target)
+            return mid;
+        }
+    }
+    return -1;
+}
+
+int rightSearch(vector<int>& nums, int target)
+{   
+    int start = 0, end = nums.size()-1;
+    
+    while(start<=end)
+    {
+        int mid = (start + end)/2;
+        
+         if(nums[mid]>target)
+             end = mid - 1;
+        else if (nums[mid]<target)
+            start = mid + 1;
+        else
+        {
+            
+            if(nums[mid+1]==target)
+               start = mid + 1;
+            
+            if(nums[mid+1]>target)
+                return mid;
+        }
+    }
+    return -1;
+}
+    
     vector<int> searchRange(vector<int>& nums, int target) {
-         int f=-1,l=-1;
-        int si=0, ei=nums.size()-1;
         
-		// For finding the first element index
-        while(si <= ei) {
-            
-            int mid = (si+ei)/2;
-            if(nums[mid] == target) {
-                f = mid;
-                ei = mid-1;
-            } else if(nums[mid] < target) si = mid+1;
-            else ei = mid-1;
-        }
-		
-        //for finding the last element index
-        si=0, ei=nums.size()-1;
-        while(si <= ei) {
-            
-            int mid = (si+ei)/2;
-            if(nums[mid] == target) {
-                l = mid;
-                si = mid+1;
-            } else if(nums[mid] > target) ei = mid-1;
-            else si = mid+1;
-        }
+        vector<int> a {};
         
-        return {f, l};    
+        a.push_back(leftSearch(nums, target));
+        a.push_back(rightSearch(nums, target));
+      
+        
+        return a;
     }
 };
+
+// BF will be to use 2 loops 
+//  like say we have 1 2  7 7 7 7 7  8 so if target is 7 i will be at 7 start and j will be another loop
+
+// Opt : divide the array in 2 parts, find left half , find right half
