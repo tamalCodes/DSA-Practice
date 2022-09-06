@@ -10,3 +10,5 @@ Happy coding !!
  - Sliding window
  - 2 pointers
  - 3 pointers
+ - Binary search can be used to find the ceiling and floor of a number
+ - Binary search for peak element
