@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Day2_array",
+      "request": "launch",
+      "mainClass": "Code.Day2_array",
+      "projectName": "DSA_51c16d32"
+    },
+    {
+      "type": "java",
       "name": "Launch hello",
       "request": "launch",
       "mainClass": "basics.hello"
