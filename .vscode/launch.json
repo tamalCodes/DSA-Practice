@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Day4_BSearch",
+      "request": "launch",
+      "mainClass": "Code.Day4_BSearch",
+      "projectName": "DSA_51c16d32"
+    },
+    {
+      "type": "java",
       "name": "Launch Day3",
       "request": "launch",
       "mainClass": "Code.Day3",
