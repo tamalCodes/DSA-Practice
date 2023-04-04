@@ -10,6 +10,8 @@ public class CeilingOfNumber {
             return;
         }
 
+        // good old binary search
+
         while (start <= end) {
 
             int mid = (start + end) / 2;
@@ -24,6 +26,7 @@ public class CeilingOfNumber {
                 start = mid + 1;
 
         }
+
         System.out.println("Ceiling is " + arr[start]);
 
     }

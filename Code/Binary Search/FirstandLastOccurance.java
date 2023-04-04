@@ -31,6 +31,7 @@ public class FirstandLastOccurance {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[] { 1, 2, 3, 4, 5, 5, 5, 5, 5, 5, 8, 9, 10, 10, 10, 11 };
+
         int[] ans = new int[2];
 
         ans[1] = findfirstandlastocc(arr, 5, false);

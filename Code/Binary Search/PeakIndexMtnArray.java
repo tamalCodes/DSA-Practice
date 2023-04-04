@@ -45,10 +45,10 @@ public class PeakIndexMtnArray {
 
             mid = (start + end) / 2;
 
-            if (arr[mid] > arr[mid + 1])
+            if (arr[mid] > arr[mid + 1]) // right side of peak
                 end = mid;
             else
-                start = mid + 1;
+                start = mid + 1; // left side of the peak
 
         }
 
