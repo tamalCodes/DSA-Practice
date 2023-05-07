@@ -5,7 +5,7 @@
 // Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
 
 //* Brute force */
-// Take each element, count freqs.
+// Take each element, count freqs and maybe store them in an array
 // Return K most top freqs.
 
 //* Optimal */
@@ -18,7 +18,19 @@ public class TopK {
         int[] arr = { 1, 1, 1, 2, 2, 3 };
         int k = 2;
 
-        System.out.println(topKFrequent(arr, k));
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int i : arr) {
+            map.put(i, map.getOrDefault(i, 0) + 1);
+        }
+
+        PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
+
+        for (Map.Entry entry : map.entrySet()) {
+            pq.add(entry);
+        }
+
+        // System.out.println(topKFrequent(arr, k));
     }
 
 }

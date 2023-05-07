@@ -1,14 +1,6 @@
-# DSA-Pratice
-##Everyday-of-DSA
-A repo created to store some of the good codes i found and praticed.
-Please do star it if needed.
-Happy coding !!
+## Priority Queues
 
+### What is a Priority Queue?
 
-### Array Logics : 
+A priority queue is a data structure that stores elements in a queue-like fashion, but each element has a "priority" associated with it. In a priority queue, an element with high priority is served before an element with low priority. If two elements have the same priority, they are served according to their order in the queue.
 
- - Sliding window
- - 2 pointers
- - 3 pointers
- - Binary search can be used to find the ceiling and floor of a number
- - Binary search for peak element
