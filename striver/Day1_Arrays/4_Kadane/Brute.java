@@ -5,6 +5,10 @@ import java.util.*;
 
 public class Brute {
 
+    // intuition behind the runBrute() method
+    // we are taking the sum of all the subarrays and then finding the largest
+    // sum
+
     static void runBrute(int[] arr) {
 
         int largestSum = 0, sum = 0;
@@ -24,9 +28,14 @@ public class Brute {
 
     }
 
-    // intuition behind the runBrute() method
-    // we are taking the sum of all the subarrays and then finding the largest
-    // sum
+    // runBetter method
+    // In this method we are going through all the elements in the array
+    // We keep calculating sum as we go
+    // if sum<0 we make it 0 because no point in going -ve
+    // Else we keep adding and storing the max
+
+    // time complexity : O(n)
+    // space complexity : O(1)
 
     static void runBetter(int[] arr) {
         int largestSum = arr[0], sum = 0;
@@ -45,15 +54,6 @@ public class Brute {
         System.out.println("The largest sum is : " + largestSum);
 
     }
-
-    // intution behind the runBetter() method
-    // if the sum is negative, then it is not contributing to the largest sum
-    // so we can reset the sum to 0
-    // and if the sum is greater than the largest sum, then we can update the
-    // largest sum
-
-    // time complexity : O(n)
-    // space complexity : O(1)
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

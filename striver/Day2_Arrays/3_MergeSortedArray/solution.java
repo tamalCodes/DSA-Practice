@@ -19,34 +19,41 @@ public class solution {
         arr2[j] = temp;
     }
 
+    static void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+
     static void mergearray(int[] arr1, int[] arr2, int m, int n) {
         int i = 0, j = 0;
 
-        while (i < (m + n)) {
-            if (arr1[i] <= arr2[j]) {
-
-                if (arr1[i] != 0) {
-                    i++;
-                } else {
-                    swap(arr1, arr2, i, j);
-                    i++;
-                    j++;
-                }
-            } else {
+        while (i < arr1.length && j < arr2.length) {
+            if (arr1[i] > arr2[j]) {
                 swap(arr1, arr2, i, j);
+                i++;
+                j++;
+            } else {
+                i++;
             }
-        }
-
-        for (int j2 = 0; j2 < arr1.length; j2++) {
-            System.out.println(arr1[j2]);
 
         }
+
+        i = 0;
+
+        while (i < arr2.length) {
+            arr1[arr2.length + i] = arr2[i];
+            i++;
+        }
+
+        printArray(arr1);
+
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] arr1 = { 1, 2, 2, 0, 0, 0 };
-        int[] arr2 = { 3, 5, 6 };
+        int[] arr1 = { 0 };
+        int[] arr2 = { 1 };
 
         int m = 3, n = 3;
 

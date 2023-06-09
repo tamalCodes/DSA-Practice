@@ -16,6 +16,9 @@
 // The reason to sort it is all the anagrams will have the same sorted string
 // Once i have sorted the string, i will look in the hashmap if i already have that string as a key
 // if I don't have it i will add that sorted string as a key, and then add the unsorted string as a value FOR THAT KEY
+// if i ALREADY have that key, i will just add the unsorted string as a value FOR THAT KEY
+// As i will be doing this for all the strings, i will have all the anagrams of a particular string as values for that key
+// Finally i will just return the values of the hashmap in a List of List format
 
 //* Explanations */
 // suppose: { "eat", "tea", "tan", "ate", "nat", "bat" }
@@ -26,13 +29,14 @@
 // aet    |     eat
 
 // Then i come to "tea", sorted: aet
-// As the key already exists, i'll add the unsorted value
+// As the key already exists, i'll add the unsorted value "tea"
 // Hashmap : 
 
 // KEY    |     VALUE
 // aet    |     eat, tea
 
 // tan
+// The sorted string is: ant, which doesn't exist as a key, so i'll add it as a key and add the unsorted value "tan"
 // Hashmap : 
 
 // KEY    |     VALUE
@@ -40,6 +44,7 @@
 // ant    |     tan
 
 // ate
+// The sorted string is: aet, which already exists as a key, so i'll add the unsorted value "ate"
 // Hashmap : 
 
 // KEY    |     VALUE

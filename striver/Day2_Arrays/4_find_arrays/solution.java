@@ -28,7 +28,7 @@ public class solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int[] arr = { 3, 1, 3, 4, 2 };
+        int[] arr = { 1, 1, 3, 4, 2 };
         findDup(arr);
     }
 }
