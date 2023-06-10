@@ -58,8 +58,12 @@ public class EncodeDecode {
             while (str.charAt(j) != '#') {
                 j++;
             }
+            // after this j will point to #
 
             int len = Integer.parseInt(str.substring(i, j));
+
+            // we then substring 4 from 4#
+            // Then we use the 4 to substring the main word 👇🏻
 
             strs.add(str.substring(j + 1, j + len + 1));
             i = j + len + 1;
