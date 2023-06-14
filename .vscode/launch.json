@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LongestSubstringWithoutRepeatingCharacters",
+      "request": "launch",
+      "mainClass": "LongestSubstringWithoutRepeatingCharacters",
+      "projectName": "dsa_28f635fe"
+    },
+    {
+      "type": "java",
       "name": "Launch Day4_BSearch",
       "request": "launch",
       "mainClass": "Code.Day4_BSearch",
