@@ -80,7 +80,7 @@ public class ValidAnagram {
     }
 
     public static void main(String[] args) {
-        boolean hello = validAna("anagrmm", "nagaram");
+        boolean hello = validAna("tamal", "talma");
         System.out.println(hello);
     }
 
